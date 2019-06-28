@@ -1,0 +1,16 @@
+class Solution:
+    def sortArrayByParity(self, A: List[int]) -> List[int]:
+        even_list = []
+        odd_list = []
+        length = len(A)
+        for x in range(length):
+            if A[x] % 2 == 0:
+                even_list.append(A[x])
+        
+        for x in range(length):
+            if A[x] % 2 == 1:
+                odd_list.append(A[x])
+        
+        full_list = even_list + odd_list
+        A = full_list
+        return A
