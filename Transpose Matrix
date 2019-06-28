@@ -1,0 +1,11 @@
+class Solution:
+    def transpose(self, A: List[List[int]]) -> List[List[int]]:
+        transposedMatrix = []
+        
+        for i in range(len(A[0])):
+            tempList = []
+            transposedMatrix.append(tempList)
+            for j in range(len(A)):
+                tempList.append(A[j][i])
+                
+        return transposedMatrix
